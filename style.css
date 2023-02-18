@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    margin-left: 20px;
+  }
+  
+  header li a {
+    font-size: 250%;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  @media (max-width: 767px) {
+    .navbar {
+      flex-wrap: wrap;
+    }
+  
+    .logo {
+      order: 1;
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    ul {
+      order: 3;
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    li {
+      margin: 10px 0;
+    }
+  
+    .navbar-toggler {
+      order: 2;
+    }
+  
+    .navbar-collapse.show + ul {
+      display: flex;
+    }
+  }
+
+  nav .nav-link {
+    border-radius: 10px;
+    transition: background-color 0.8s, color 0.2s;
+  }
+  
+  nav .nav-link:hover {
+    background-color: #f7af9d;
+    color: yellow;
+  }
+@media (max-width: 767px) {
+    .navbar-brand img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-brand img {
+      max-width: 300px;
+      height: auto;
+    }
+  }
+  footer {
+    background: rgb(109,89,122);
+    background: -moz-linear-gradient(180deg, rgba(109,89,122,1) 74%, rgba(135,69,90,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(109,89,122,1) 74%, rgba(135,69,90,1) 100%);
+    background: linear-gradient(180deg, rgba(109,89,122,1) 74%, rgba(135,69,90,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6d597a",endColorstr="#87455a",GradientType=1);;
+    color: white;
+    padding: 30px 0;
+    margin-top: 5px;
+  }
+  footer h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 250%;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  footer ul li a{
+    font-family: 'Josefin Sans', sans-serif;
+    color: inherit
+  }
+  footer ul li a:hover{
+    color: #f7af9d
+  }
+  
+  .social-icons li {
+    display: block;
+    margin: 10px 0;
+  }
+    
+  .social-icons i {
+    font-size: 30px;
+    color: #87455a;
+  }
+  
+  .social-icons a:hover i {
+    color: #f7af9d;
+  }
+  
+  footer form {
+    display: flex;
+    align-items: center;
+  }
+  
+  form .form-group {
+    margin-bottom: 0;
+  }
+  
+  footer form input[type="email"] {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  footer form button {
+    margin-left: 10px;
+  }
+  .btn {
+    color: #6d597a;
+    background-color: white;
+    border-color: #87455a;
+}
+.btn:hover {
+    background-color: #f7af9d;
+    border-color: #6d597a;
+}
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 767px) {
+    .social-icons {
+      display: block;
+      margin-top: 30px;
+    }
+    
+    .social-icons a {
+      margin: 0 8px;
+    }
+  }
+  .list-inline-item a i {
+    font-size: 2em;
+  }
+  @media (max-width: 767px) {
+    footer ul{
+        display: flex;
+    }
+}
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+
+  }
+  
+  .content {
+    flex: 1 0 auto;
+  }
+  
+  footer {
+    flex-shrink: 0;
+  }
+.home-site{
+    max-width: 70%;
+   
+}
+@media (max-width: 767px) {
+    .home-site {
+      max-width: 100%;
+      height: auto;
+    }
+}
+
+
+
+.form__container {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+    padding: 25px;
+    margin: 55px;
+}
+
+.form__container input {
+    margin: 10px;
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #f7af9d;
+    border: none;
+    border: #D9D9D9 solid 1px;
+    border-radius: 10px;
+}
+
+.form__container textarea {
+    margin: 10px;
+    padding: 10px;
+    height: 100px;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 150px;
+    max-height: 300px;
+    background-color: #f7af9d;
+    border: none;
+    border: #D9D9D9 solid 1px;
+    border-radius: 10px;
+}
+
+.form__container button {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #6d597a;
+    background-color: white;
+    border-color: #87455a;
+    font-weight: 500;
+    border: #87455a solid 1px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 50px;
+    height: 50px;
+    width: 100px;
+}
+
+.form__container option {
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.form__container button:hover {
+    background-color: #87455a;
+    border-color: #6d597a solid 1px;
+    transition: 0.5s;
+    cursor: pointer;
+    color: white;
+}
+
+.form__container h3, p {
+    text-align: center;
+    font-size: 25px;
+}
+/* Sobre nosotros */
+.equipo {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.equipo h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 150px;
+}
+.equipo h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #6d597a;
+    text-align: center;
+}
+@media (max-width:600px) {
+    .equipo h3 {
+    font-size: 24px;
+    }}
+
+.equipo p {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #6d597a;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.miembro {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    width: 500px;
+}
+.miembro img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.miembro h4 {
+    color: #e56b6f;
+    margin: 10px 0;
+}
+
+
+.miembro p {
+    text-align: center;
+    color: #6d597a;
+    font-size: 20px;
+    margin-top: 20px;
+    margin: 20px;
+    padding: 10px;
+    }
+}
+.equipo-locales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (max-width: 767px) {
+    .miembro {
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .miembro h4{
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+/* fin sobre n */
