@@ -196,11 +196,7 @@ html, body {
     font-family: 'Josefin Sans', sans-serif;
 
   }
-  
-  .content {
-    flex: 1 0 auto;
-  }
-  
+   
   footer {
     flex-shrink: 0;
   }
@@ -347,7 +343,6 @@ html, body {
     margin: 20px;
     padding: 10px;
     }
-}
 .equipo-locales {
     display: flex;
     flex-wrap: wrap;
