@@ -1,0 +1,36 @@
+@import '../base/listas';
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: nth($background-color,1); 
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+li {
+	margin-left: 20px;
+}
+header {
+	li {
+		a {
+			font-size: 20px;
+			color: nth($colores,1);
+			text-decoration: none;
+			font-family: nth($font-family,1);
+		}
+	}
+}
+nav {
+	.nav-link {
+		border-radius: 10px;
+		transition: background-color 0.8s, color 0.2s;
+		&:hover {
+			background-color: nth($background-color,2);
+		}
+	}
+}
+

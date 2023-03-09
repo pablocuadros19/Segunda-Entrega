@@ -1,0 +1,72 @@
+@import '../base/listas';
+form {
+	.form-group {
+		margin-bottom: 0;
+	}
+}
+.form__container {
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 500px;
+	font-family: nth($font-family,1);
+	font-weight: 500;
+	font-size: 1rem;
+	color: nth($colores,7);
+	padding: 25px;
+	margin: 55px;
+	input {
+		margin: 10px;
+		padding: 5px;
+		height: 40px;
+		width: 100%;
+		max-width: 300px;
+		background-color: nth($background-color,2);
+		border: none;
+		border: #D9D9D9 solid 1px;
+		border-radius: 10px;
+	}
+	textarea {
+		margin: 10px;
+		padding: 10px;
+		height: 100px;
+		width: 300px;
+		min-width: 300px;
+		max-width: 300px;
+		min-height: 150px;
+		max-height: 300px;
+		background-color: nth($background-color,2);
+		border: none;
+		border: #D9D9D9 solid 1px;
+		border-radius: 10px;
+	}
+	button {
+		font-family: nth($font-family,1);
+		color: nth($colores,6);
+		background-color: nth($background-color,1);
+		border-color: nth($border-color,1);
+		font-weight: 500;
+		border: #87455a solid 1px;
+		border-radius: 10px;
+		padding: 5px;
+		margin: 0 50px;
+		height: 50px;
+		width: 100px;
+		&:hover {
+			background-color: nth($background-color,3);
+			border-color: nth($border-color,3);
+			transition: 0.5s;
+			cursor: pointer;
+			color: nth($colores,2);
+		}
+	}
+	option {
+		font-family: nth($font-family,1);
+	}
+	h3 {
+		text-align: center;
+		font-size: 25px;
+	}
+}

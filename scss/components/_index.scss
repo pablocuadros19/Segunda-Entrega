@@ -1,0 +1,91 @@
+@media (max-width: 767px) {
+	.navbar {
+		flex-wrap: wrap;
+	}
+ footer .row{
+        gap: 5rem;
+    }
+	.logo {
+        align-items: center;
+        justify-content: center;
+		order: 1;
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	ul {
+		order: 3;
+		width: 100%;
+		display: none;
+		flex-direction: column;
+		align-items: center;
+	}
+	li {
+		margin: 10px 0;
+	}
+	.navbar-toggler {
+		order: 2;
+	}
+	.navbar-collapse.show {
+		+ {
+			ul {
+				display: flex;
+			}
+		}
+	}
+	.navbar-brand {
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.social-icons {
+		display: block;
+		margin-top: 30px;
+		a {
+			margin: 0 8px;
+		}
+	}
+	footer {
+		ul {
+			display: flex;
+		}
+	}
+	.home-site {
+		max-width: 100%;
+		height: auto;
+	}
+    .equipo h2{
+        font-size: 60px;
+    }
+}
+@media (min-width: 768px) {
+	.navbar-brand {
+		img {
+			max-width: 150px;
+			height: auto;
+		}
+	}
+}
+@media (max-width:600px) {
+	.equipo {
+		h3 {
+			font-size: 24px;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.miembro {
+		width: 100%;
+		margin: 20px 0;
+        h4 {
+			width: 100%;
+			margin: 20px 0;
+		}
+	}
+    .clase-fotos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,30 @@
+p {
+	text-align: center;
+	font-size: 25px;
+}
+.btn {
+	color: nth($colores,6);
+	background-color: nth($background-color,1);
+	border-color: nth($border-color,1);
+	&:hover {
+		background-color: nth($background-color,2);
+		border-color: nth($border-color,2);
+	}
+}
+.list-inline-item {
+	a {
+		i {
+			font-size: 2em;
+		}
+	}
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	font-family: nth($font-family,1);
+}
+.home-site {
+	max-width: 70%;
+}

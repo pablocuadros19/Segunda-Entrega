@@ -1,0 +1,49 @@
+@import '../base/listas';
+.equipo {
+	font-family: nth($font-family,1);
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px 0;
+	h2 {
+		font-family: nth($font-family,1);
+		font-size: 150px;
+	}
+	h3 {
+		font-family: nth($font-family,1);
+		color: nth($colores,6);
+		text-align: center;
+	}
+	p {
+		font-family: nth($font-family,1);
+		color: nth($colores,6);
+		font-size: 18px;
+		line-height: 1.5;
+		text-align: center;
+		margin: 20px 0;
+	}
+}
+.miembro {
+	text-align: center;
+	margin: 20px;
+	width: 500px;
+	img {
+		width: 100%;
+		border-radius: 50%;
+	}
+	h4 {
+		color: nth($colores,8);
+		margin: 10px 0;
+	}
+	p {
+		text-align: center;
+		color: nth($colores,6);
+		font-size: 20px;
+		margin-top: 20px;
+		margin: 20px;
+		padding: 10px;
+	}
+}
+.clase-fotos{
+    display: flex;
+}
