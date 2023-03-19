@@ -1,3 +1,4 @@
 # Bootstrap
 /node_modules
 /dist
+/.vs
